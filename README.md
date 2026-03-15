@@ -49,7 +49,7 @@ Os resultados são apresentados em três gráficos comparativos.
 
 ## Tempo de execução
 
-![Tempo](checkpoint1/graficos/grafico_tempo_execucao.png)
+![Tempo](checkpoint1/graficos/grafico_tempo.png)
 
 ## Uso de memória
 
@@ -57,7 +57,7 @@ Os resultados são apresentados em três gráficos comparativos.
 
 ## Consumo energético estimado
 
-![Energia](checkpoint1/graficos/grafico_energia_proxy.png)
+![Energia](checkpoint1/graficos/grafico_energia.png)
 
 ---
 

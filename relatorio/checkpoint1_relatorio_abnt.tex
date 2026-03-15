@@ -1,0 +1,167 @@
+
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\geometry{left=3cm,right=2cm,top=3cm,bottom=2cm}
+\onehalfspacing
+\setlength{\parindent}{1.25cm}
+
+\title{Análise do Impacto de Estruturas de Dados no Consumo Energético de Sistemas}
+\author{Lincoln Pereira \\ RM 567284 \\ Turma 1CCPS}
+\date{Disciplina: Energias Renováveis e Sustentabilidade \\ Professor: Roberto Torres Vaver}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+
+{\normalsize 1º ANO DE CIÊNCIAS DA COMPUTAÇÃO}\\
+{\normalsize TURMA 1CCPS}\\[2cm]
+
+{\normalsize SERS – SOLUÇÕES EM ENERGIAS RENOVÁVEIS E SUSTENTÁVEIS}\\
+{\normalsize ENERGIAS RENOVÁVEIS E SUSTENTABILIDADE}\\[2.5cm]
+
+{\Large \textbf{CHECKPOINT 1}}\\[0.5cm]
+
+{\Large \textbf{ANÁLISE DO IMPACTO DE ESTRUTURAS DE DADOS}}\\
+{\Large \textbf{NO CONSUMO ENERGÉTICO DE SISTEMAS}}\\[3cm]
+
+\begin{flushright}
+\begin{minipage}{0.45\textwidth}
+Trabalho acadêmico apresentado à disciplina de Energias Renováveis e Sustentabilidade como requisito avaliativo do Checkpoint 1.
+\end{minipage}
+\end{flushright}
+
+\vfill
+
+Lincoln Pereira\\
+RM 567284\\[1cm]
+
+São Paulo\\
+2026
+
+\end{center}
+\end{titlepage}
+
+\section*{Resumo}
+
+O consumo energético de sistemas computacionais tornou-se um tema relevante dentro da área de sustentabilidade tecnológica. Cada operação realizada por um programa implica utilização de recursos computacionais que, por sua vez, demandam energia elétrica. Neste trabalho foi realizada uma comparação entre três estruturas de dados amplamente utilizadas: lista dinâmica, lista ligada e tabela hash. As estruturas foram implementadas na linguagem Python e submetidas ao mesmo conjunto de operações: inserção de 100.000 elementos, realização de 50.000 buscas e remoção de 20.000 elementos. Durante os testes foram analisadas três métricas principais: tempo de execução, uso de memória e consumo energético estimado por proxy de tempo de CPU. Os resultados demonstram que a escolha da estrutura de dados possui impacto significativo no desempenho computacional e, consequentemente, no consumo energético do sistema.
+
+\textbf{Palavras-chave:} Estruturas de dados; Eficiência energética; Sustentabilidade computacional; Python.
+
+\section{Introdução}
+
+A eficiência energética tem se tornado um tema cada vez mais relevante na computação moderna. Tradicionalmente, a análise de desempenho de sistemas considerava apenas fatores como tempo de execução e consumo de memória. Entretanto, com o crescimento da demanda por processamento e armazenamento de dados, torna-se importante também avaliar o impacto energético das decisões de implementação.
+
+Estruturas de dados são componentes fundamentais no desenvolvimento de software. A escolha de uma estrutura inadequada pode gerar maior número de operações de CPU, acessos à memória e, consequentemente, maior consumo energético. Dessa forma, compreender o comportamento dessas estruturas é essencial para o desenvolvimento de sistemas mais eficientes e sustentáveis.
+
+\section{Objetivo}
+
+O objetivo deste trabalho é analisar como diferentes estruturas de dados influenciam o consumo de recursos computacionais e a eficiência energética de um sistema.
+
+Para isso, foram comparadas três estruturas de dados:
+
+\begin{itemize}
+\item Lista dinâmica
+\item Lista ligada
+\item Tabela hash
+\end{itemize}
+
+A comparação foi realizada a partir da execução das mesmas operações em cada estrutura, permitindo avaliar diferenças de desempenho e impacto energético.
+
+\section{Metodologia}
+
+As três implementações foram desenvolvidas em Python. Essa linguagem foi escolhida por sua facilidade de implementação e pela disponibilidade de bibliotecas que permitem realizar medições de desempenho.
+
+Cada versão do programa executa as seguintes operações:
+
+\begin{enumerate}
+\item Inserção de 100.000 elementos
+\item Realização de 50.000 buscas
+\item Remoção de 20.000 elementos
+\end{enumerate}
+
+Durante a execução foram coletadas as seguintes métricas:
+
+\begin{itemize}
+\item Tempo de execução
+\item Uso de memória
+\item Consumo energético estimado (proxy baseado no tempo de CPU)
+\end{itemize}
+
+Os resultados obtidos foram posteriormente utilizados para a geração de gráficos comparativos entre as três estruturas.
+
+\section{Resultados}
+
+\subsection{Tempo de execução}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{grafico_tempo.png}
+\caption{Comparação do tempo de execução entre as estruturas de dados.}
+\end{figure}
+
+\subsection{Uso de memória}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{grafico_memoria.png}
+\caption{Comparação do uso de memória entre as estruturas de dados.}
+\end{figure}
+
+\subsection{Consumo energético estimado}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{grafico_energia.png}
+\caption{Comparação do consumo energético estimado entre as estruturas de dados.}
+\end{figure}
+
+\section{Discussão}
+
+A análise dos resultados mostra diferenças importantes entre as estruturas de dados avaliadas. A tabela hash apresentou o melhor desempenho em termos de tempo de execução, principalmente nas operações de busca, devido à sua complexidade média próxima de O(1). Isso reduz significativamente o número de operações necessárias para localizar elementos.
+
+A lista dinâmica apresentou desempenho intermediário. Embora seja eficiente para inserções sequenciais, as operações de busca ainda exigem percorrer os elementos, caracterizando complexidade O(n).
+
+A lista ligada apresentou o pior desempenho geral. Isso ocorre porque a busca em listas ligadas também possui complexidade O(n), além de apresentar menor localidade de memória, já que os elementos não são armazenados de forma contígua.
+
+Essas características resultam em maior número de operações de CPU e maior tempo de execução, o que implica maior consumo energético estimado.
+
+\section{Respostas às Questões}
+
+\textbf{1) Qual das três estruturas teve o menor consumo energético?}
+
+A estrutura que apresentou menor consumo energético foi a tabela hash. Isso ocorre porque ela permite buscas muito rápidas, exigindo menos ciclos de CPU para localizar elementos.
+
+\textbf{2) Qual das três estruturas teve o pior consumo energético?}
+
+A lista ligada apresentou o pior consumo energético. Isso acontece porque a busca exige percorrer vários nós da estrutura, aumentando o número de operações realizadas pelo processador.
+
+\textbf{3) Qual estrutura seria mais "verde"?}
+
+Do ponto de vista energético, a estrutura mais sustentável é aquela que reduz o número total de operações de processamento. Mesmo que utilize um pouco mais de memória, se ela reduzir significativamente o tempo de execução e o número de ciclos de CPU, ela tende a consumir menos energia.
+
+\section{Conclusão}
+
+Este trabalho demonstrou que a escolha de estruturas de dados influencia diretamente o desempenho computacional e o consumo energético de sistemas. Estruturas mais eficientes em operações de busca, como tabelas hash, tendem a apresentar melhor eficiência energética.
+
+Dessa forma, decisões de implementação em software também possuem impacto ambiental e devem ser consideradas no desenvolvimento de sistemas mais sustentáveis.
+
+\section*{Referências}
+
+CORMEN, Thomas H. et al. \textit{Introduction to Algorithms}. MIT Press.
+
+PYTHON SOFTWARE FOUNDATION. Python Documentation. Disponível em: https://www.python.org
+
+\end{document}
