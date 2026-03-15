@@ -49,15 +49,15 @@ Os resultados são apresentados em três gráficos comparativos.
 
 ## Tempo de execução
 
-![Tempo](checkpoint1/graficos/grafico_tempo.png)
+![Tempo](graficos/grafico_tempo.png)
 
 ## Uso de memória
 
-![Memoria](checkpoint1/graficos/grafico_memoria.png)
+![Memoria](graficos/grafico_memoria.png)
 
 ## Consumo energético estimado
 
-![Energia](checkpoint1/graficos/grafico_energia.png)
+![Energia](graficos/grafico_energia.png)
 
 ---
 
@@ -65,7 +65,7 @@ Os resultados são apresentados em três gráficos comparativos.
 
 O relatório completo do trabalho está disponível no PDF abaixo:
 
-📄 ![Relatorio](checkpoint1/relatorio/checkpoint1_relatorio.pdf)
+📄 ![Relatorio](relatorio/checkpoint1_relatorio.pdf)
 
 O documento contém:
 
@@ -79,7 +79,7 @@ O documento contém:
 O arquivo em **LaTeX (ABNT)** também está disponível para referência:
 
 ```
-checkpoint1/relatorio/checkpoint1_relatorio_abnt.tex
+relatorio/checkpoint1_relatorio_abnt.tex
 ```
 
 ---
@@ -87,8 +87,6 @@ checkpoint1/relatorio/checkpoint1_relatorio_abnt.tex
 # 📁 Estrutura do projeto
 
 ```
-checkpoint1
-│
 ├── README.md
 ├── requirements.txt
 │
