@@ -6,13 +6,15 @@ git clone https://github.com/lincoln743/cp1_SERS_2semestre
 
 cd cp1_SERS_2semestre
 
-py -m venv .venv
+python -m venv .venv
 
-source .venv/bin/activate
+.venv\Scripts\activate
 
 pip install -r requirements.txt
 
-py codigo/executar_tudo.py
+py codigo\executar_tudo.py
+
+py codigo\gerar_graficos.py
 
 ---------------------------------------------------------
 
