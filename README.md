@@ -80,7 +80,7 @@ Os resultados são apresentados em três gráficos comparativos.
 
 O relatório completo do trabalho está disponível no PDF abaixo:
 
-📄 ![Relatorio](relatorio/checkpoint1_relatorio.pdf)
+[📄 Abrir relatório em PDF](relatorio/checkpoint1_relatorio.pdf)
 
 O documento contém:
 
