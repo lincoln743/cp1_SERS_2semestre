@@ -1,3 +1,18 @@
+Como executar o projeto
+
+git clone https://github.com/lincoln743/cp1_SERS_2semestre
+
+cd cp1_SERS_2semestre
+
+python3 -m venv .venv
+
+source .venv/bin/activate
+
+pip install -r requirements.txt
+
+python3 codigo/executar_tudo.py
+
+---------------------------------------------------------
 
 # 🌱 Checkpoint 1 – Estruturas de Dados e Consumo Energético
 
@@ -49,7 +64,7 @@ Os resultados são apresentados em três gráficos comparativos.
 
 ## Tempo de execução
 
-![Tempo](graficos/grafico_tempo.png)
+![Tempo](graficos/grafico_tempo_execucao.png)
 
 ## Uso de memória
 
@@ -57,7 +72,7 @@ Os resultados são apresentados em três gráficos comparativos.
 
 ## Consumo energético estimado
 
-![Energia](graficos/grafico_energia.png)
+![Energia](graficos/grafico_energia_proxy.png)
 
 ---
 
