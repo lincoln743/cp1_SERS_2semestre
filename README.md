@@ -4,13 +4,13 @@ git clone https://github.com/lincoln743/cp1_SERS_2semestre
 
 cd cp1_SERS_2semestre
 
-python3 -m venv .venv
+py -m venv .venv
 
 source .venv/bin/activate
 
 pip install -r requirements.txt
 
-python3 codigo/executar_tudo.py
+py codigo/executar_tudo.py
 
 ---------------------------------------------------------
 
