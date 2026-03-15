@@ -1,4 +1,6 @@
-Como executar o projeto
+Como executar o projeto (tempo total de execução 3 a 5 min)
+
+Abrir o cmd do windows e copiar todos os codigos abaixo de uma só vez:
 
 git clone https://github.com/lincoln743/cp1_SERS_2semestre
 
